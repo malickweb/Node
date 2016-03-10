@@ -1,0 +1,138 @@
+<section class="container active-main" id="services">
+    <h2>mes compétences</h2>
+    <div class="row">
+        <div class="wow fadeIn col-md-6">
+            <i class="icon-flag icon"></i>
+            <h3>Intégration Html/Css</h3>
+            <p class="text">Conception d'un template avec <a href="#photoshop">Photoshop</a> et intégrations <a href="#html">HTML5 / CSS3</a> claires et Compatible sur tous les navigateurs.</p>
+        </div>
+        <div class="wow fadeIn col-md-6">
+            <i class="icon-comment icon"></i>
+            <h3>JavaScript</h3>
+            <p class="text">Dynamisation du site avec <a href="#javascript">JavaScript</a>. Utilisation de la librairie jQuery.</p>
+        </div>
+        <div class="wow fadeIn col-md-6">
+                        <span class="icon">
+                            <i class="icon-mobile"></i>
+                            <i class="icon-tablet"></i>
+                            <i class="icon-desktop"></i>
+                        </span>
+            <h3>Responsives design</h3>
+            <p class="text">Intégration du site en <a href="#responsive">mobile-first</a> avec <a href="#bootstrap">Bootstrap-SASS</a> pour l'adaptabilité sur toutes les plateformes</p>
+        </div>
+        <div class="wow fadeIn col-md-6">
+            <i class="icon-code icon"></i>
+            <h3>Grunt</h3>
+            <p class="text">Industrialisation des tâches avec <a href="#grunt">Grunt</a>. Pour plus de rapidité et de légèreté.</p>
+        </div>
+    </div>
+</section>
+<section class="active-main" id="presentation">
+    <div class="container">
+        <div class="col-sm-6">
+            <img itemprop="image" src="img/id-malick-002.jpg" title="Malick Belgrine" alt="Malick Belgrine">
+        </div>
+        <div class="col-sm-6" itemscope itemtype="http://schema.org/Person">
+            <h1 itemprop="name"><%= presentation[0].titre %></h1>
+            <p>Autodidacte, je suis développeur <a href="#<%= presentation[0].firstLink %>"><%= presentation[0].textLink %></a>, <a href="#<%= presentation[0].secondLink %>"><%= presentation[0].secondLink %></a> <%= presentation[0].secondPart %></p>
+            <a class="btn-contact" href="#<%= presentation[0].thirdLink %>"><button class="btn"><%= presentation[0].thirdPart %></button></a>
+        </div>
+    </div>
+</section>
+<section id="progress">
+    <h2>progression</h2>
+    <div class="container">
+        <div class="row">
+            <% for(var i = 0; i < skill.length; i++) { %>
+            <div id="html" class="col-sm-6 col-md-4 progress-pourcent">
+                <div class="border-circle">
+                    <img class="<%= skill[i].class %>" src="<%= skill[i].img %>" title="<%= skill[i].name %>" alt="<%= skill[i].name %>"/>
+                    <input maxlength="3" type="text" data-level = "<%= skill[i].val %>" value="0" />
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+<section id="projet">
+    <div class="container">
+        <div class="row">
+            <h2>Projet</h2>
+            <div class="content-link col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+                <% for(var i = 0; i < projet.length; i++) { %>
+                    <span>
+                        <img src="<%= projet[i].src %>" alt="site de taxi-moto">
+                        <a class="img-responsive" target="_blank" href="<%= projet[i].url %>" title="<%= projet[i].title %>">
+                            <div class="ombres"><%= projet[i].name %></div>
+                        </a>
+                    </span>
+                <a href="<%= projet[i].url %>"><p><%= projet[i].name %></p></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="active-main" id="work">
+    <div class="container">
+        <div class="row">
+            <h2>L' Apprentissage</h2>
+            <div class="content-link">
+                <ul>
+                    <% for(var i = 0; i < tuto.length; i++) { %>
+                    <li class="col-xs-6 col-md-4">
+                        <span>
+                            <img src="<%= tuto[i].src %>" alt="site tuto">
+                            <a class="img-responsive" target="_blank" href="<%= tuto[i].url %>" title="<%= tuto[i].title %>">
+                                <div class="ombres"><%= tuto[i].name %></div>
+                            </a>
+                        </span>
+                        <a href="<%= tuto[i].url %>"><p><%= tuto[i].name %></p></a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="active-main" id="contact" itemscope itemtype="http://schema.org/Person">
+    <div class="container">
+        <h2>Contactez-moi</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="logo-contact">
+                    <ul>
+                        <li><a class="img-linkedin" target="_blank" href="https://www.linkedin.com/profile/view?id=363932044&trk=nav_responsive_tab_profile" title="lien-Linkedin" alt="lien-Linkedin"></a></li>
+                        <li><a class="img-viadeo" target="_blank" href="http://www.viadeo.com/profile/00220vi4yj9pmwus/?readOnly=true" title="lien-Viadeo" alt="lien-Viadeo"></a></li>
+                        <li><a class="doc-cv" target="_blank" href="pdf/CV-MalickBelgrine.pdf" title="C.V" alt="C.V"><i class="icon-file-openoffice"></i></a><p>C.V</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <form id="formulaire" action="php/test.php" method="POST">
+                    <div class="message-ok"><i class="icon-checkmark">Votre message a bien été envoyée</i></div>
+                    <div class="form-input">
+                        <i class="icon-user"></i>
+                        <input id="name" name="nom" type="text" placeholder="Votre nom est ...">
+                    </div>
+                    <div class="error-name"><i class="icon-circle-cross">Veuillez saisir votre nom</i></div>
+                    <div class="error-name-synt"><i class="icon-circle-cross">Votre nom ne doit comporter que des lettres</i></div>
+                    <div class="form-input">
+                        <i class="icon-envelope"></i>
+                        <input id="mail" name="email" type="text" placeholder="Je dois répondre à ...">
+                    </div>
+                    <div class="error-mail"><i class="icon-circle-cross">Veuillez saisir votre e-mail</i></div>
+                    <div class="error-mail-synt"><i class="icon-circle-cross">Veuillez saisir un e-mail valide</i></div>
+                    <div class="form-input-text">
+                        <i class="icon-comment"></i>
+                        <textarea class="text" name="message" placeholder="De quoi voulez-vous parler ..."></textarea>
+                    </div>
+                    <div class="error-text"><i class="icon-circle-cross">Veuillez saisir votre message</i></div>
+                    <button id="envoie" name="envoie" type="submit" class="btn">
+                        <i class="icon-paper-plane"></i>
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

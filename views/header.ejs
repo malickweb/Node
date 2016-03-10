@@ -1,0 +1,35 @@
+<div id="img-main">
+    <div id="main" class="menu--head">
+        <div class="container">
+            <div class="name" itemscope itemtype="http://schema.org/Person">
+                <a href="#">
+                    <h1 itemprop="name"><%= ident.firstName %> <%= ident.name %></h1>
+                    <h1 itemprop="jobTitle"><%= jobTitle.job1 %><span><%= jobTitle.job2 %></span></h1>
+                </a>
+            </div>
+            <div class="menu--contain">
+                <button class="btn-perso">
+                    <span></span>
+                </button>
+            </div>
+            <nav class="noscroll col-md-offset-1 col-lg-offset-2">
+                <ul>
+                    <% for(var i = 0; i < main.length; i++) { %>
+                    <li><a class="actived" href="#<%= mainLink[i] %>" title="<%= main[i] %>"><%= main[i] %></a></li>
+                    <% } %>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="inner-img"></div>
+    <div class="text-content container" itemscope itemtype="http://schema.org/Person">
+        <p>Je suis </p><h1 class="text-main" itemprop="name"><%= ident.firstName %> <%= ident.name %></h1><p> et je suis <%= jobTitle.job1 %></p>
+        <div class="slider">
+            <ul>
+                <% for(var i = 0; i < langues.length; i++) { %>
+                    <li><a href="#"><%= langues[i] %></a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</div>

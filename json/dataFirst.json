@@ -1,0 +1,128 @@
+{
+    "ident"    : {
+        "firstName": "Malick",
+        "name": "Belgrine"
+    },
+    "jobTitle" : {
+        "job1": "intégrateur",
+        "job2": "Html/Css"
+    },
+    "main"     : ["compétence", "à propos","apprentissage","contactez-moi"],
+    "mainLink" : ["services","presentation","work","contact"],
+    "langues"  : ["html", "css", "Javascript"],
+
+    "presentation" :
+        [
+            {
+            "titre": "salut, je suis Malick",
+            "firstPart": "Autodidacte, je suis développeur",
+            "firstLink": "html",
+            "textLink": "Html/Css",
+            "secondLink": "javascript",
+            "secondPart": "junior. J' ai 28 ans et j'habite à Courbevoie (92).",
+            "thirdLink": "contact",
+            "thirdPart": "Pour me contacter"
+            }
+        ],
+    "skill" :
+        [
+            {
+            "name": "HTML5",
+            "val": "80",
+            "img": "img/html-par.png"
+            },
+            {
+            "name": "CSS3",
+            "val": "80",
+            "img": "img/css-par.png"
+            },
+            {
+            "name": "JAVASCRIPT",
+            "val": "65",
+            "img": "img/js-par.png"
+            },
+            {
+            "name": "PHP",
+            "val": "60",
+            "img": "img/php.jpg",
+            "class": "img-sm"
+            },
+            {
+            "name": "GRUNT",
+            "val": "60",
+            "img": "img/grunt1.png",
+            "class": "img-md"
+            },
+            {
+            "name": "SASS",
+            "val": "80",
+            "img": "img/sass1.png",
+            "class": "img-lg"
+            },
+            {
+            "name": "RESPONSIVE DESIGN",
+            "val": "90",
+            "img": "img/responsive_20design.png",
+            "class": "img-md"
+            },
+            {
+            "name": "BOOTSTRAP",
+            "val": "75",
+            "img": "img/bootstrap1.jpg"
+            },
+            {
+            "name": "PHOTOSHOP",
+            "val": "65",
+            "img": "img/photoshop.jpg"
+            }
+        ],
+    "projet" :
+        [
+            {
+                "src": "img/projet1.jpg",
+                "url": "http://www.taxi-moto-urgent.com/",
+                "name": "taxi-moto-urgent.com",
+                "title": "Taxi moto urgent"
+            }
+        ],
+    "tuto" :
+        [
+            {
+            "src": "img/openclassroom.jpg",
+            "url": "http://openclassrooms.com/",
+            "name": "openclassroom.com",
+            "title": "OpenClassRoom"
+            },
+            {
+            "src": "img/toutjavascript.jpg",
+            "url": "http://www.toutjavascript.com/",
+            "name": "toutjavascript.com",
+            "title": "Cours JavaScript"
+            },
+            {
+            "src": "img/jquery.jpg",
+            "url": "http://jquery.com/",
+            "name": "jquery.com",
+            "title": "librairie JavaScript"
+            },
+            {
+            "src": "img/grafikart.jpg",
+            "url": "http://grafikart.fr/",
+            "name": "grafikart.fr",
+            "title": "tutoriel video"
+            },
+            {
+            "src": "img/devDoc.jpg",
+            "url": "http://devdocs.io/",
+            "name": "devdocs.io",
+            "title": "librairie developpeur"
+            },
+            {
+            "src": "img/developpez.jpg",
+            "url": "http://www.developpez.com/",
+            "name": "developpez.com",
+            "title": "developpez"
+            }
+
+        ]
+}

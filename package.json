@@ -1,0 +1,18 @@
+{
+  "name": "salut",
+  "version": "0.1.0",
+  "dependencies": {
+    "ejs": "~2.1.4",
+    "express": "^4.11.2",
+    "express-favicon": "^1.0.1",
+    "grunt": "^0.4.5"
+  },
+  "author": "moi",
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
